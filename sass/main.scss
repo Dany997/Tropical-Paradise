@@ -178,9 +178,61 @@ body {
 	}
 }
 
+// MAIN-------------------------------------------------------
+// DREAMS-SECTION----------------------------------------------
+
+.dreams {
+	&_box {
+		display: flex;
+		flex-direction: column;
+		margin: 2em 0;
+	}
+	&_img {
+		width: 100%;
+		margin-bottom: 1em;
+	}
+	&_title {
+		margin-bottom: 0.5em;
+	}
+
+	&_text {
+		font-size: 1.4rem;
+	}
+}
+
 // ------------------------------------------------------------
 // MEDIA
 //-------------------------------------------------------------
+
+@media (min-width: 576px) {
+	.dreams {
+		&_box {
+			flex-direction: row;
+			justify-content: space-between;
+
+			&-text {
+				width: 55%;
+
+				&--right {
+					text-align: center;
+				}
+			}
+
+			&-img {
+				width: 40%;
+
+				&--right {
+					order: 1;
+				}
+			}
+		}
+
+		&_img {
+			margin-bottom: 0;
+			max-height: 300px;
+		}
+	}
+}
 
 @media (min-width: 768px) {
 	.white-block {
@@ -200,6 +252,12 @@ body {
 			font-size: 1.6rem;
 		}
 	}
+
+	.dreams {
+		&_text {
+			font-size: 1.8rem;
+		}
+	}
 }
 
 @media (min-width: 992px) {
@@ -213,6 +271,33 @@ body {
 
 		&_heading {
 			font-size: 10rem;
+		}
+	}
+
+	.nav {
+		&_item {
+			font-size: 4.8rem;
+		}
+	}
+
+	.dreams {
+		&_box {
+			margin: 5em 0;
+
+			&-text {
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-end;
+				margin-bottom: 2.5em;
+			}
+		}
+
+		&_title {
+			font-size: 3.6rem;
+		}
+
+		&_text {
+			font-size: 2.2rem;
 		}
 	}
 }

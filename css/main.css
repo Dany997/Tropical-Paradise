@@ -45,6 +45,37 @@
   transform-origin: left;
 }
 
+.section-heading {
+  position: relative;
+  margin: 2em;
+  font-size: 3rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  color: #1755e7;
+  letter-spacing: 2px;
+}
+
+.section-padding {
+  padding: 6em 2em;
+}
+
+@media (min-width: 768px) {
+  .section-heading {
+    font-size: 3.6rem;
+  }
+  .section-padding {
+    padding: 8em 2em;
+  }
+}
+@media (min-width: 992px) {
+  .section-heading {
+    font-size: 4.8rem;
+  }
+  .section-padding {
+    padding: 10em 2em;
+  }
+}
 *,
 *::before,
 *::after {
@@ -201,6 +232,44 @@ body {
   background-color: #eee;
 }
 
+.dreams_box {
+  display: flex;
+  flex-direction: column;
+  margin: 2em 0;
+}
+.dreams_img {
+  width: 100%;
+  margin-bottom: 1em;
+}
+.dreams_title {
+  margin-bottom: 0.5em;
+}
+.dreams_text {
+  font-size: 1.4rem;
+}
+
+@media (min-width: 576px) {
+  .dreams_box {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .dreams_box-text {
+    width: 55%;
+  }
+  .dreams_box-text--right {
+    text-align: center;
+  }
+  .dreams_box-img {
+    width: 40%;
+  }
+  .dreams_box-img--right {
+    order: 1;
+  }
+  .dreams_img {
+    margin-bottom: 0;
+    max-height: 300px;
+  }
+}
 @media (min-width: 768px) {
   .white-block {
     height: 50px;
@@ -215,6 +284,9 @@ body {
   .header_btn {
     font-size: 1.6rem;
   }
+  .dreams_text {
+    font-size: 1.8rem;
+  }
 }
 @media (min-width: 992px) {
   .burger-btn {
@@ -226,5 +298,23 @@ body {
   }
   .header_heading {
     font-size: 10rem;
+  }
+  .nav_item {
+    font-size: 4.8rem;
+  }
+  .dreams_box {
+    margin: 5em 0;
+  }
+  .dreams_box-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 2.5em;
+  }
+  .dreams_title {
+    font-size: 3.6rem;
+  }
+  .dreams_text {
+    font-size: 2.2rem;
   }
 }/*# sourceMappingURL=main.css.map */
