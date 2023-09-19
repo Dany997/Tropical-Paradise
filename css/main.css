@@ -268,6 +268,52 @@ body {
   padding: 1em 0;
 }
 
+.islands_card {
+  position: relative;
+  margin: 1em 0;
+  height: 450px;
+  text-align: center;
+  color: #fff;
+  perspective: 1000px;
+}
+.islands_card:hover .islands_card-img {
+  transform: rotateY(-180deg);
+  opacity: 0;
+}
+.islands_card:hover .islands_card-info {
+  transform: rotateY(0);
+  opacity: 1;
+}
+.islands_card-img {
+  padding: 2em;
+  height: 100%;
+  border-radius: 8px;
+  background-size: cover;
+  transition: transform 1s, opacity 1s;
+}
+.islands_card-img--first {
+  background-image: linear-gradient(45deg, rgba(8, 206, 255, 0.75), rgba(8, 24, 255, 0.75)), url(../img/islands-1.jpg);
+}
+.islands_card-img--second {
+  background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url(../img/islands-2.jpg);
+}
+.islands_card-img--third {
+  background-image: linear-gradient(45deg, rgba(190, 10, 214, 0.75), rgba(68, 0, 255, 0.75)), url(../img/islands3.jpg);
+}
+.islands_card-img-title {
+  font-family: "Dancing Script", cursive;
+  font-size: 2.8rem;
+}
+.islands_card-img-info {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  font-size: 1.8rem;
+}
+.islands_card-img-info i {
+  margin-right: 0.3em;
+}
+
 @media (min-width: 576px) {
   .dreams_box {
     flex-direction: row;
