@@ -179,6 +179,7 @@ body {
 }
 
 // MAIN-------------------------------------------------------
+
 // DREAMS-SECTION----------------------------------------------
 
 .dreams {
@@ -197,6 +198,27 @@ body {
 
 	&_text {
 		font-size: 1.4rem;
+	}
+}
+
+// -----HERO-IMG-------------------------------------------------
+
+.hero-img {
+	position: relative;
+	padding: 10em 2em;
+	@include heroImages('../img/Hero-image_small.jpg');
+	text-align: center;
+	color: $pure-white;
+	overflow: hidden;
+
+	&_title {
+		font-family: 'Dancing Script', cursive;
+		margin-bottom: 0.5em;
+		font-size: 4.8rem;
+	}
+
+	&_text {
+		padding: 1em 0;
 	}
 }
 
@@ -258,6 +280,19 @@ body {
 			font-size: 1.8rem;
 		}
 	}
+
+	.hero-img {
+		padding: 30rem 2em;
+
+		hr {
+			margin: 0 auto;
+			width: 70%;
+		}
+
+		&_text {
+			font-size: 2.2rem;
+		}
+	}
 }
 
 @media (min-width: 992px) {
@@ -298,6 +333,20 @@ body {
 
 		&_text {
 			font-size: 2.2rem;
+		}
+	}
+
+	.hero-img {
+		padding: 40rem 2em;
+		background-image: $blue-gradient, url(../img/Hero_image-big.jpg);
+
+		&_title {
+			font-size: 7.2rem;
+		}
+
+		hr {
+			width: 60%;
+			max-width: 900px;
 		}
 	}
 }
