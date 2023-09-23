@@ -564,19 +564,23 @@ body {
 			max-width: 900px;
 		}
 	}
-
 	.offers {
-		background-image: $blue-gradient, url(../img/Hero-img-2-big.jpg);
-	}
+		background-image: $blue-gradient, url('../img/Hero-img-2-big.jpg');
 
-	&_option {
-		&-img {
-			object-fit: cover;
-			height: 300px;
+		&_option {
+			&-img {
+				object-fit: cover;
+				height: 300px;
+			
+			
+			}
+		
+		&-text{
+
+font-size: 1.5rem;
+
 		}
-
-		&-text {
-			font-size: 1.5rem;
+		
 		}
 	}
 }
