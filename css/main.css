@@ -192,6 +192,12 @@ body {
   animation: navItemsAnimation 1s both;
 }
 
+.black-bars-color,
+.black-bars-color::after,
+.black-bars-color::before {
+  background-color: #2e2e2e;
+}
+
 .header {
   position: relative;
   display: flex;
@@ -405,6 +411,16 @@ body {
   color: #2e2e2e;
 }
 .offers_option-btn {
+  margin-top: 1em;
+  padding: 0.8em;
+  width: 100%;
+  color: #fff;
+  background-color: #1755e7;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.offers button {
   margin-top: 1em;
   padding: 0.8em;
   width: 100%;
