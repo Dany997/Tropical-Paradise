@@ -455,6 +455,94 @@ body {
   color: #2e2e2e;
 }
 
+.contact {
+  position: relative;
+  background-color: #eee;
+  overflow: hidden;
+}
+.contact .white-block-left {
+  background-color: #2e2e2e;
+}
+.contact_form, .contact_form-top {
+  display: flex;
+  flex-direction: column;
+}
+.contact_form-label {
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+.contact_form-input {
+  margin-bottom: 2em;
+  padding: 0.6em 1.2em;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.6rem;
+}
+.contact_form-textarea {
+  margin-bottom: 2em;
+  padding: 0.6em 1.2em;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.6rem;
+  max-width: 100%;
+  min-width: 100%;
+  width: 100%;
+  min-height: 150px;
+}
+.contact_form-btn {
+  align-self: flex-end;
+  padding: 1em;
+  width: 100%;
+  max-width: 300px;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  background-color: #1755e7;
+  cursor: pointer;
+}
+.contact_form-btn::before {
+  background-color: #164dcc;
+}
+
+.footer {
+  color: #fff;
+  background-color: #2e2e2e;
+}
+.footer .wrapper {
+  padding: 6em 2em 2em;
+}
+.footer_box {
+  font-size: 1.4rem;
+}
+.footer_box-desktop {
+  display: none;
+}
+.footer_box-title {
+  margin-bottom: 1em;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.footer_box-social {
+  margin: 2em 0 1em;
+}
+.footer_box-link {
+  padding: 0.3em;
+  font-size: 3.6rem;
+  color: #fff;
+  text-decoration: none;
+  transition: color 3s;
+}
+.footer_box-link:first-child {
+  padding-left: 0;
+}
+.footer_box-link:hover {
+  color: #eee;
+}
+.footer_bottom-text {
+  padding: 2em;
+  text-align: center;
+}
+
 @media (min-width: 576px) {
   .dreams_box {
     flex-direction: row;
@@ -537,6 +625,34 @@ body {
   .islands_card {
     margin: 1em;
     width: 45%;
+  }
+  .footer_boxes {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer_box-desktop {
+    display: block;
+  }
+  .footer_box {
+    margin: 0 2em;
+    width: 25%;
+  }
+  .footer_box:first-child {
+    width: 50%;
+  }
+  .footer_box-title {
+    font-size: 2.4rem;
+  }
+  .footer_box-list {
+    list-style: none;
+  }
+  .footer_box-list-item {
+    list-style: none;
+    margin-bottom: 1em;
+  }
+  .footer_box-list-item a {
+    color: #eee;
+    text-decoration: none;
   }
 }
 @media (min-width: 992px) {
